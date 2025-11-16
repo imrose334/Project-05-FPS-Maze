@@ -8,7 +8,7 @@
 ADDED FEATURES (for 20 pts):
 1. Added day/night cycle
 2. Added new models 
-3. Added music/  sound effects
+3. Added custom music/  sound effects
 4. elaborated upon in-game menu 
 5. added new materials and used them creatively
 6. attempted to add popup text to instruct player
