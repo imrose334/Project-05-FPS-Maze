@@ -13,7 +13,7 @@ REQUIRED FEATURES:
 
 
 EXTRA FEATURES:
-1. Added jump feature
+1. Added day/night cycle
 2. Added new models 
 3. Added music/  sound effects
 4. elaborated upon in-game menu 
