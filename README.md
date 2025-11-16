@@ -1,7 +1,25 @@
-# Exercise-05c-LightsAndMaterials
+# Project 5 - FPS Maze
 
 
-## Implementation
+## Implementation / Features
+(Attempted full 20 points)
+REQUIRED FEATURES:
+- one object to interact with
+- ≥1 enemy
+- 2 light sources
+- main menu and end-game screen
+- clear objective
+
+
+
+EXTRA FEATURES:
+1. Added jump feature
+2. Added new models 
+3. Added music/  sound effects
+4. elaborated upon in-game menu 
+5. added new materials and used them creatively
+
+
 
 ## References
 

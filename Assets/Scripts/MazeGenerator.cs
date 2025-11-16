@@ -27,10 +27,6 @@ public class MazeGenerator : MonoBehaviour
 
     List<List<int>> map = new List<List<int>>();
 
-    
-
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -41,7 +37,13 @@ public class MazeGenerator : MonoBehaviour
 
         MakeMaze();
 
+        // 1. Instantiate the player object
         GameObject p = GameObject.Instantiate(player);
+        
+        // 2. >>> CRITICAL FIX: Explicitly set the tag to "Player" <<<
+        p.tag = "Player"; 
+        
+        // 3. Set the position
         p.transform.position = new Vector3(2.91f, 1f, 4.6f);
     }
 
@@ -58,7 +60,6 @@ public class MazeGenerator : MonoBehaviour
         }
         return list;
     }
-
 
     private void MakeMaze()
     {
@@ -108,13 +109,10 @@ public class MazeGenerator : MonoBehaviour
                 stack.RemoveAt(stack.Count - 1);
             
             }
-
-            
         }
 
         for (int i = 0; i < width; i++)
         {
-            
             for (int j = 0; j < height; j++)
             {
                 GameObject tile = GameObject.Instantiate(tiles[map[i][j]]);
@@ -123,12 +121,7 @@ public class MazeGenerator : MonoBehaviour
                 tile.transform.Translate(new Vector3 (j*tile_size, 0, i * tile_size));
                 tile.name += " " + i.ToString() + ' ' + j.ToString();
                 tile.GetComponentInChildren<NavMeshSurface>().BuildNavMesh();
-               
             }
-
         }
-
     }
-
-    
 }
